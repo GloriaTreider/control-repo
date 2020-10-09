@@ -35,6 +35,12 @@ class profile::base_linux {
     source => 'https://github.com/krzmig/Binclock.git',
   }
 
+  package { 'binclock':
+    ensure => latest,
+    source => 'https://github.com/krzmig/Binclock.git',
+  }
+
+
 # root@manager should be able to ssh without password to all
   file { '/root/.ssh':
     owner => 'root',
