@@ -28,8 +28,6 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-}
-node default {
  notify { "Oops Default! I'm ${facts['hostname']}": }
 }
 node 'win.node.consul' {

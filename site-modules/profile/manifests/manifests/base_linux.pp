@@ -30,14 +30,9 @@ class profile::base_linux {
     ensure => latest,
   }
 
-  package { 'binclock':
-    ensure => installed,
-    source => 'https://github.com/krzmig/Binclock.git',
-  }
 
   package { 'binclock':
     ensure => latest,
-    source => 'https://github.com/krzmig/Binclock.git',
   }
 
 
